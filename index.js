@@ -2,7 +2,6 @@ var readlineSync = require("readline-sync");
 
 var score = 0;
 
-// data of high score
 var highScores = [
   {
     name: "Monu",
@@ -19,7 +18,6 @@ var highScores = [
   },
 ]
 
-// array of objects
 var questions = [
 {
   question: "Q1.Where do I live? ",
@@ -54,7 +52,6 @@ function welcome() {
 }
 
 
-// play function
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
 
